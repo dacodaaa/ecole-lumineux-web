@@ -1,7 +1,7 @@
 
-import { useState, useEffect } from "react";
-import { useLanguage } from "./LanguageContext";
+import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useLanguage } from "./LanguageContext";
 
 const heroImages = [
   {
@@ -54,7 +54,7 @@ export const HeroCarousel = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen overflow-hidden">
+    <section id="home" className="relative h-[90vh] min-h-[600px] overflow-hidden">
       {/* Carousel Images */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
@@ -68,7 +68,7 @@ export const HeroCarousel = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover transform scale-105"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           </div>

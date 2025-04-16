@@ -139,8 +139,8 @@ export const ServicesCarousel = () => {
         </div>
 
         {/* Carousel */}
-        <div className="relative overflow-hidden py-10" ref={containerRef}>
-          <div className="flex justify-center items-center h-[400px] relative">
+        <div className="relative overflow-hidden py-20" ref={containerRef}>
+          <div className="flex justify-center items-center h-[500px] relative">
             {visibleServices.map(({ service, position }, index) => (
               <div
                 key={service.id}
@@ -148,8 +148,8 @@ export const ServicesCarousel = () => {
                            ${getCardStyle(position)} hover:shadow-xl`}
                 onClick={() => position === 0 && openServiceDetails(service)}
               >
-                <div className="bg-white rounded-xl overflow-hidden shadow-lg w-[300px] h-[350px]">
-                  <div className="relative h-[200px] overflow-hidden">
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg w-[350px] h-[450px]">
+                  <div className="relative h-[250px] overflow-hidden">
                     <img
                       src={service.imageUrl}
                       alt={service.name}
