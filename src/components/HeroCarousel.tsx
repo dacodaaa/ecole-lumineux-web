@@ -54,7 +54,7 @@ export const HeroCarousel = () => {
   };
 
   return (
-    <section id="home" className="relative h-[90vh] min-h-[600px] overflow-hidden">
+    <section id="home" className="relative h-[100vh] min-h-[700px] overflow-hidden">
       {/* Carousel Images */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
@@ -68,7 +68,7 @@ export const HeroCarousel = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className="h-full w-full object-cover transform scale-105"
+              className="h-full w-full object-cover transform scale-110"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           </div>
@@ -107,29 +107,29 @@ export const HeroCarousel = () => {
       {/* Navigation Arrows */}
       <button
         onClick={goToPrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full p-2 text-white transition duration-300"
+        className="absolute left-8 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full p-3 text-white transition duration-300"
         aria-label="Previous slide"
       >
-        <ChevronLeft size={24} />
+        <ChevronLeft size={28} />
       </button>
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full p-2 text-white transition duration-300"
+        className="absolute right-8 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full p-3 text-white transition duration-300"
         aria-label="Next slide"
       >
-        <ChevronRight size={24} />
+        <ChevronRight size={28} />
       </button>
 
       {/* Indicators */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
+      <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-3">
         {heroImages.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`h-2.5 w-2.5 rounded-full transition-all duration-300 ${
+            className={`h-3 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? "bg-white w-10"
-                : "bg-white bg-opacity-50"
+                ? "bg-white w-12"
+                : "bg-white bg-opacity-50 w-3"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

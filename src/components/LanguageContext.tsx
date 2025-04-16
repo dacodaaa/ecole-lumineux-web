@@ -71,17 +71,17 @@ const translations = {
     fr: "Langues par niveau",
     ar: "اللغات حسب المستوى"
   },
-  "service.tot": {
-    fr: "TOT (Trainer of Trainers)",
-    ar: "تدريب المدربين"
+  "service.developpement": {
+    fr: "Développement personnel",
+    ar: "تطوير الذات"
   },
   "service.soroban": {
     fr: "Soroban",
     ar: "سوروبان"
   },
-  "service.robotique": {
-    fr: "Robotique",
-    ar: "الروبوتات"
+  "service.informatique": {
+    fr: "Informatique",
+    ar: "معلوماتية"
   },
   "service.formation": {
     fr: "Formation Professionnelle",
@@ -100,21 +100,21 @@ const translations = {
     fr: "Apprentissage des langues adapté à tous les niveaux, avec des méthodes pédagogiques innovantes et des enseignants natifs.",
     ar: "تعلم اللغات مناسب لجميع المستويات، مع أساليب تعليمية مبتكرة ومعلمين ناطقين باللغة الأصلية."
   },
-  "service.tot.desc": {
-    fr: "Programme spécialisé pour former les futurs formateurs, développant les compétences pédagogiques et les techniques d'enseignement efficaces.",
-    ar: "برنامج متخصص لتدريب المدربين المستقبليين، وتطوير المهارات التعليمية وتقنيات التدريس الفعالة."
+  "service.developpement.desc": {
+    fr: "Programmes de développement personnel pour améliorer les compétences de vie, incluant la formation des formateurs, des éducateurs préscolaires et des formateurs Soroban.",
+    ar: "برامج التطوير الشخصي لتحسين مهارات الحياة، بما في ذلك تدريب المدربين، ومربيات الروضة، ومدربي السوروبان."
   },
   "service.soroban.desc": {
     fr: "Méthode japonaise traditionnelle de calcul mental qui améliore les compétences en mathématiques et la concentration des élèves.",
     ar: "طريقة يابانية تقليدية للحساب الذهني تحسن مهارات الرياضيات والتركيز لدى الطلاب."
   },
-  "service.robotique.desc": {
-    fr: "Des ateliers de robotique pour développer la pensée logique, la créativité et les compétences en résolution de problèmes chez les élèves.",
-    ar: "ورش عمل الروبوتات لتطوير التفكير المنطقي والإبداع ومهارات حل المشكلات لدى الطلاب."
+  "service.informatique.desc": {
+    fr: "Formation complète en informatique, bureautique, robotique et programmation pour tous les niveaux, des débutants aux avancés.",
+    ar: "تدريب شامل في المعلوماتية، العمل المكتبي، الروبوتات والبرمجة لجميع المستويات، من المبتدئين إلى المتقدمين."
   },
   "service.formation.desc": {
-    fr: "Des formations professionnelles qualifiantes pour préparer nos étudiants à réussir sur le marché du travail avec des compétences pratiques et théoriques.",
-    ar: "تدريب مهني مؤهل لإعداد طلابنا للنجاح في سوق العمل بمهارات عملية ونظرية."
+    fr: "Formations professionnelles qualifiantes incluant l'électricité industrielle, l'électricité bâtiments et la réparation de chaudières pour préparer nos étudiants au marché du travail.",
+    ar: "تدريب مهني مؤهل يشمل الكهرباء الصناعية، كهرباء المباني وإصلاح الغلايات لإعداد طلابنا لسوق العمل."
   },
   // Contact
   "contact.title": {
