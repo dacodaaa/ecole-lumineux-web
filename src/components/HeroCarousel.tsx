@@ -1,5 +1,5 @@
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "./LanguageContext";
 
@@ -41,16 +41,21 @@ export const HeroCarousel = () => {
     }
   };
 
+  // Auto-play effect
   useEffect(() => {
     const timer = setTimeout(() => {
       goToNext();
-    }, 5000);
+    }, 3000); // Change slide every 3 seconds
 
     return () => clearTimeout(timer);
   }, [currentIndex]);
 
   const handleTransitionEnd = () => {
     setIsTransitioning(false);
+  };
+
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -89,17 +94,17 @@ export const HeroCarousel = () => {
           </p>
           <div className="flex justify-center space-x-4">
             <a
-              href="#about"
-              className="bg-nbs-purple px-8 py-3 rounded-md text-white font-semibold hover:bg-nbs-purple-dark transition duration-300"
-            >
-              {t("nav.about")}
-            </a>
-            <a
               href="#services"
-              className="bg-transparent border-2 border-white px-8 py-3 rounded-md text-white font-semibold hover:bg-white hover:text-nbs-purple-dark transition duration-300"
+              className="bg-nbs-purple px-8 py-3 rounded-md text-white font-semibold hover:bg-nbs-purple-dark transition duration-300"
             >
               {t("nav.services")}
             </a>
+            <button
+              onClick={scrollToContact}
+              className="bg-transparent border-2 border-white px-8 py-3 rounded-md text-white font-semibold hover:bg-white hover:text-nbs-purple-dark transition duration-300"
+            >
+              {language === "fr" ? "S'inscrire" : "التسجيل"}
+            </button>
           </div>
         </div>
       </div>
