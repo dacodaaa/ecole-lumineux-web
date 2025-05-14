@@ -41,7 +41,7 @@ export const HeroCarousel = () => {
     }
   };
 
-  // Auto-play effect
+  // Auto-play effect - fixed to loop through all images
   useEffect(() => {
     const timer = setTimeout(() => {
       goToNext();
@@ -68,7 +68,7 @@ export const HeroCarousel = () => {
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
-            onTransitionEnd={handleTransitionEnd}
+            onTransitionEnd={index === currentIndex ? handleTransitionEnd : undefined}
           >
             <img
               src={image.src}

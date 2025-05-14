@@ -1,6 +1,8 @@
+
 import { LanguageProvider } from "@/components/LanguageContext";
 import { Navbar } from "@/components/Navbar";
 import { HeroCarousel } from "@/components/HeroCarousel";
+import { NewsCarousel } from "@/components/NewsCarousel";
 import { AboutSection } from "@/components/AboutSection";
 import { ServicesCarousel } from "@/components/ServicesCarousel";
 import { ContactSection } from "@/components/ContactSection";
@@ -12,6 +14,7 @@ const Index = () => {
       <div className="min-h-screen bg-white">
         <Navbar />
         <HeroCarousel />
+        <NewsCarousel />
         <AboutSection />
         <ServicesCarousel />
         <ContactSection />
