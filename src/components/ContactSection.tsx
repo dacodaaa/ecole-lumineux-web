@@ -45,7 +45,6 @@ export const ContactSection = () => {
           </p>
         </div>
         
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Contact Form */}
           <div className="bg-white rounded-xl shadow-xl p-8">
             <form onSubmit={handleSubmit}>
@@ -102,70 +101,8 @@ export const ContactSection = () => {
               </button>
             </form>
           </div>
-          
-          {/* Contact Info */}
-          <div>
-            <div className="bg-white rounded-xl shadow-xl p-8 mb-8">
-              <h3 className="text-xl font-bold text-nbs-purple-dark mb-6">
-                {language === "fr" ? "Informations de Contact" : "معلومات الاتصال"}
-              </h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-nbs-purple bg-opacity-10 p-3 rounded-full mr-4">
-                    <MapPin className="text-nbs-purple" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">{t("contact.address")}</h4>
-                    <p className="text-gray-600">123 Rue Principale, Casablanca, Maroc</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-nbs-purple bg-opacity-10 p-3 rounded-full mr-4">
-                    <Phone className="text-nbs-purple" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">{t("contact.phone")}</h4>
-                    <p className="text-gray-600">+212 5xx-xxxxxx</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-nbs-purple bg-opacity-10 p-3 rounded-full mr-4">
-                    <Mail className="text-nbs-purple" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">{t("contact.email.label")}</h4>
-                    <p className="text-gray-600">contact@nbsschool.ma</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Opening Hours */}
-            <div className="bg-white rounded-xl shadow-xl p-8">
-              <h3 className="text-xl font-bold text-nbs-purple-dark mb-6">
-                {language === "fr" ? "Heures d'Ouverture" : "ساعات العمل"}
-              </h3>
-              
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span className="text-gray-700">{language === "fr" ? "Lundi - Vendredi" : "الإثنين - الجمعة"}</span>
-                  <span className="font-semibold text-gray-900">8h00 - 18h00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-700">{language === "fr" ? "Samedi" : "السبت"}</span>
-                  <span className="font-semibold text-gray-900">9h00 - 15h00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-700">{language === "fr" ? "Dimanche" : "الأحد"}</span>
-                  <span className="font-semibold text-gray-900">{language === "fr" ? "Fermé" : "مغلق"}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+     
+
       </div>
     </section>
   );

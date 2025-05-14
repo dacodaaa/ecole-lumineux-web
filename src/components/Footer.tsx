@@ -13,7 +13,7 @@ export const Footer = () => {
         
         {/* Embed Google Maps iframe - Replace with actual location */}
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13292.563652232653!2d-7.613464960250276!3d33.59294249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d282e017166f%3A0x33723e709e160969!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1650154461888!5m2!1sen!2sus" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.692938372494!2d3.2427390241305813!3d36.72993517165726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e4fc2c8a93dc9%3A0xc98103e573355f0f!2zVHJhaW5pbmcgU2Nob29sIC0gTmJzIFNjaG9vbCDZhdiv2LHYs9ipINin2YTYqtiv2LHZitioINmI2KrYudmE2YrZhSDYp9mE2YTYutin2Ko!5e0!3m2!1sar!2sdz!4v1744890559747!5m2!1sar!2sdz"
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 
@@ -21,7 +21,7 @@ export const Footer = () => {
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"
           title="NBS School Location"
-          className="filter grayscale"
+          
         ></iframe>
         
         {/* Location Overlay Card */}
@@ -30,11 +30,10 @@ export const Footer = () => {
             {t("footer.location")}
           </h3>
           <p className="mb-4">
-            123 Rue Principale,<br /> 
-            Casablanca, Maroc
+              Hamiz, Alger
           </p>
           <a 
-            href="https://goo.gl/maps/your-actual-location" 
+            href="https://www.google.com/maps/place/Training+School+-+Nbs+School+%D9%85%D8%AF%D8%B1%D8%B3%D8%A9+%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%D9%88%D8%AA%D8%B9%D9%84%D9%8A%D9%85+%D8%A7%D9%84%D9%84%D8%BA%D8%A7%D8%AA%E2%80%AD/@36.7299352,3.242739,17z/data=!3m1!4b1!4m6!3m5!1s0x128e4fc2c8a93dc9:0xc98103e573355f0f!8m2!3d36.7299309!4d3.2401641!16s%2Fg%2F11f2wltryg?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-white text-nbs-purple px-4 py-2 rounded-lg font-medium hover:bg-opacity-90 transition duration-300"
@@ -64,18 +63,10 @@ export const Footer = () => {
                 : "مدرسة NBS، شريكك الموثوق للتعليم الجيد ومستقبل مشرق."}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-nbs-gold transition-colors" aria-label="Facebook">
-                <Facebook size={20} />
+              <a href="https://www.facebook.com/nbsschoolalgerie" className="text-white hover:text-nbs-gold transition-colors" aria-label="Facebook">
+                <Facebook size={20} /> 
               </a>
-              <a href="#" className="text-white hover:text-nbs-gold transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-nbs-gold transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-nbs-gold transition-colors" aria-label="Youtube">
-                <Youtube size={20} />
-              </a>
+              <span >Facebook</span>
             </div>
           </div>
           
@@ -152,19 +143,20 @@ export const Footer = () => {
                 <span className="text-nbs-gold mr-3">
                   {language === "fr" ? "Tél:" : "هاتف:"}
                 </span>
-                <span>+212 5xx-xxxxxx</span>
+                <span>0778 55 49 22</span>
               </li>
               <li className="flex items-start">
                 <span className="text-nbs-gold mr-3">
                   {language === "fr" ? "Email:" : "بريد إلكتروني:"}
                 </span>
-                <span>contact@nbsschool.ma</span>
+                <span>nbs.school.admi@gmail.com
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-nbs-gold mr-3">
                   {language === "fr" ? "Adresse:" : "عنوان:"}
                 </span>
-                <span>123 Rue Principale, Casablanca, Maroc</span>
+                <span>Centre ville Hamiz , El Hamiz, Algeria</span>
               </li>
             </ul>
           </div>
